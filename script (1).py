@@ -1,12 +1,13 @@
 import pandas as pd
 import numpy as np
-
-people=pd.read_csv('../input/people.csv')
+import os
+os.chdir("D:/git_repository/Red-Hat-Business-Value-Prediction-Jiahong")
+people=pd.read_csv('../input/redhat/people.csv')
 #people=people.replace({'type ': '', 'group ': '', 'ppl_': ''}, regex=True)
-act_train=pd.read_csv('../input/act_train.csv')
+act_train=pd.read_csv('../input/redhat/act_train.csv')
 #act_train=act_train.replace({'type ': '', 'group ': '', 'ppl_': ''}, regex=True)
 act_train=act_train.fillna('-1')
-act_test=pd.read_csv('../input/act_test.csv')
+act_test=pd.read_csv('../input/redhat/act_test.csv')
 #act_test=act_test.replace({'type ': '', 'group ': '', 'ppl_': ''}, regex=True)
 act_test=act_test.fillna('-1')
 
